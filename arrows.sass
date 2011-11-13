@@ -1,0 +1,20 @@
+@mixin arrow($size:$default-arrow-size, $direction:$default-arrow-direction, $color:$default-arrow-color)
+  border-width: $size
+  border-color: transparent
+  border-style: solid
+  display: inline-block
+  height: 0px
+  width: 0px
+   
+  @if $direction == "right"
+    border-left-color: $color
+    border-right-width: 0px
+  @else if $direction == "left"
+    border-right-color: $color
+    border-left-width: 0px
+  @else if $direction == "up"
+    border-bottom-color: $color
+    border-top-width: 0px
+  @else if $direction == "down"
+    border-top-color: $color
+    border-bottom-width: 0px

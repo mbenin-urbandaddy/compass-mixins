@@ -1,0 +1,10 @@
+Compass Mixins
+
+arrows.sass draws triangle shaped arrows given a size, direction and color.
+
+```sass
+span.arrow
+  +arrow(5px, down, black)
+```
+
+will draw a 5px wide black arrows pointing down.
